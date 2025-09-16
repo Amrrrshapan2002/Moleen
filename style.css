@@ -1,0 +1,54 @@
+@keyframes colorShift {
+  0% { background-color: #ffffff; }
+  33% { background-color: #e6f0ff; }
+  66% { background-color: #f1f8e9; }
+  100% { background-color: #ffffff; }
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: colorShift 30s infinite;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+}
+
+.card {
+  background: #d3d3d3;
+  border-radius: 15px;
+  box-shadow:
+    8px 8px 15px #babecc,
+    -8px -8px 15px #ffffff;
+  padding: 30px 40px;
+  width: 320px;
+  color: #333;
+  animation: colorShift 30s infinite;
+  transition: background-color 1s ease;
+}
+
+.card .info h2 {
+  margin: 0 0 10px 0;
+  font-weight: 700;
+}
+
+.card .info .title {
+  margin: 0 0 15px 0;
+  color: #666;
+  font-weight: 500;
+}
+
+.card .info p {
+  margin: 5px 0;
+}
+
+.card .info a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.card .info a:hover {
+  text-decoration: underline;
+}
